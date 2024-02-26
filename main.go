@@ -10,6 +10,7 @@ func main() {
 	cards.saveToFile(fileName)
 	newCards := newDeckFromFile(fileName)
 
-	fmt.Println(newCards)
+	newCards.shuffle()
+	newCards.print()
 }
  
